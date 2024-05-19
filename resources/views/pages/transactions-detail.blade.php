@@ -8,7 +8,8 @@
     <title>Document</title>
 
     {{-- GOOGLE ICONS --}}
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     {{-- CSS --}}
     <link rel="stylesheet" href="{{ asset('styles/detail-transactions.css') }}">
@@ -29,7 +30,7 @@
                     <th>Name</th>
                     <th>Payment</th>
                     <th>Detail</th>
-              </tr>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -57,7 +58,7 @@
                     <td class="button-detail"><a href="">detail</a></td>
                 </tr>
             </tbody>
-        </table>  
+        </table>
     </div>
 </body>
 
