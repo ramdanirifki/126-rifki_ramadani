@@ -9,20 +9,29 @@
 
     {{-- CSS --}}
     <link rel="stylesheet" href="{{ asset('styles/login.css') }}">
+
+	<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            @if($errors->any())
+                alert("{{ $errors->first('message') }}");
+            @endif
+        });
+    </script>
 </head>
 
 <body>
-    <form action="/all-menu" method="POST">
+    <form action="{{ route('main') }}" method="POST" id="loginForm">
+		@csrf
         <p>Sign In</p>
         <div class="form-input">
             <label for="username">
                 Username :
             </label>
-            <input type="text">
+            <input type="text" id="name" name="name" required autofocus>
             <label for="password">
                 Password :
             </label>
-            <input type="password">
+            <input type="password" id="password" name="password" required>
             <div class="checkbox">
                 <input type="checkbox">
                 <div class="container-label">
@@ -31,7 +40,7 @@
             </div>
         </div>
         <div class="button">
-            <button type="button">
+            <button type="submit">
                 Continue
             </button>
         </div>

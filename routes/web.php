@@ -1,19 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PageController;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::controller(PageController::class)->group(function() {
+    Route::get('/', 'loginPage')->name('login');
+    Route::get('/main', 'mainPage')->name('main-page');
+    Route::get('/detail-transactions', 'detailTransactions')->name('transactions-detail');
 });
 
-Route::get('/login', function () {
-    return view('pages.login');
-});
-
-Route::get('/main', function () {
-    return view('pages.main-pages');
-});
-
-Route::get('/detail-transactions', function () {
-    return view('pages.transactions-detail');
-});
+Route::post('/main', [LoginController::class, 'handleLogin'])->name('login');

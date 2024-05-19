@@ -131,10 +131,14 @@ body {
   align-items: center;
   background-color: #fff;
   color: #2525;
-  font-size: 2rem;
   height: 3rem;
   width: 3rem;
   border-radius: 100px;
+}
+
+.container .navbar .cashier-profile .icon .image-profil {
+  font-size: 3rem;
+  font-weight: 350;
 }
 
 .container .navbar .cashier-profile .name-jobdesk {
@@ -145,35 +149,6 @@ body {
 .container .navbar .cashier-profile .name-jobdesk p {
   padding-top: 3px;
   font-size: small;
-}
-
-.container .navbar .input-search-product {
-  background-color: #fff;
-  height: 2.2rem;
-  width: 20rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 10px;
-  gap: 10px;
-  border-radius: 50px;
-}
-
-.container .navbar .input-search-product .fa-solid {
-  color: #2525;
-  cursor: pointer;
-}
-
-.container .navbar .input-search-product #search {
-  border: none;
-  outline: none;
-  width: 20rem;
-  color: #2525259f;
-}
-
-.container .navbar .input-search-product #search::placeholder {
-  font-family: 'Roboto', sans-serif;
-  color: #2525;
 }
 
 .container .date {

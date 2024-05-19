@@ -7,17 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    {{-- FONT AWESOME --}}
-    <script src="https://kit.fontawesome.com/00bd906045.js" crossorigin="anonymous"></script>
+    {{-- FONT AWESOME
+    <script src="https://kit.fontawesome.com/00bd906045.js" crossorigin="anonymous"></script> --}}
 
     {{-- GOOGLE FONT --}}
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     {{-- JS --}}
     <script type="module" src="{{ asset('js/views/main.js') }}"></script>
@@ -42,21 +40,19 @@
                 </div>
                 <ul>
                     <li><a href="/detail-transactions">Transactions Detail</a></li>
-                    <li><a href="/login">Logout</a></li>
+                    <li><a href="/">Logout</a></li>
                 </ul>
             </div>
             <div class="cashier-profile" tabindex="0">
                 <div class="icon">
-                    <i class="fa-regular fa-user"></i>
+                    <span class="material-symbols-outlined image-profil">
+                        person
+                    </span>
                 </div>
                 <div class="name-jobdesk">
-                    <h3>Anonimous</h3>
-                    <p>Cashier</p>
+                    <h3>{{ session('username') }}</h3>
+                    <p>{{ session('status') }}</p>
                 </div>
-            </div>
-            <div class="input-search-product">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" name="search" id="search" placeholder="Search product">
             </div>
         </div>
         <p class="date"></p>
