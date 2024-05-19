@@ -20,7 +20,6 @@ body {
 
 
 
-
 /* 
   Class Drawer Active
 */
@@ -48,14 +47,75 @@ body {
   align-items: center;
 }
 
-.container .navbar .navbar-drawer .button {
+.container .navbar .navbar-drawer {
   min-height: 30px;
   min-width: 30px;
   background-color: transparent;
   border: none;
-  font-size: 30px;
   cursor: pointer;
   color: #fff;
+  transition: transform 0.1 ease-in-out;
+}
+
+.container .navbar .navbar-drawer #menu {
+  font-size: 29px;
+}
+
+.container .navbar .navbar-drawer:hover {
+  transform: scale(1.10);
+}
+
+.container .navbar .container-drawer {
+  position: absolute;
+  background-color: rgb(119, 138, 50);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  top: 0;
+  left: -700px;
+  border-bottom-right-radius: 12px;
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.081), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container .navbar .container-drawer div {
+  height: 4.5rem;
+  display: flex;
+  color: #fff;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(96, 114, 33);
+  cursor: pointer;
+  padding-right: 20px;
+  transition: transform 0.1 ease-in-out;
+}
+
+.container .navbar .container-drawer #drawer {
+  font-size: 35px;
+}
+
+.container .navbar .container-drawer #drawer:hover {
+  transform: scale(1.10);
+}
+
+.container .navbar .container-drawer ul {
+  list-style-type: none;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  padding: 20px 30px 35px 20px;
+}
+
+.container .navbar .container-drawer ul li {
+  border-bottom: 1.5px solid #fff;
+  padding-bottom: 8px;
+}
+
+.container .navbar .container-drawer ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container .navbar .cashier-profile {
@@ -162,6 +222,7 @@ body {
   text-align:  center;
   align-items: center;
   transition: ease-in-out 0.1s;
+  cursor: pointer;
 }
 
 .main-container .main-menu .main-navbar-link li:hover {
@@ -199,6 +260,17 @@ body {
   border-radius: 8px;
   box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.081), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+
+/* 
+  TEST
+*/
+.main-container .main-menu .menu-product.hidden {
+  display: none;
+}
+
+
 
 .main-container .main-menu .menu-product .product {
   padding: 10px;
@@ -295,54 +367,4 @@ body {
 
 .main-container .payment .button .button-payment:hover {
   background-color: rgba(115, 134, 48, 0.875);
-}
-
-
-
-/* 
-  Drawer
-*/
-.container .navbar .container-drawer {
-  position: absolute;
-  background-color: rgb(119, 138, 50);
-  display: flex;
-  flex-direction: column;
-  height: fit-content;
-  width: fit-content;
-  top: 0;
-  left: -700px;
-  border-bottom-right-radius: 12px;
-  transition: ease-in-out 0.3s;
-  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.081), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.container .navbar .container-drawer .material-symbols-outlined {
-  height: 4.5rem;
-  display: flex;
-  font-size: 33px;
-  color: #fff;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: rgb(96, 114, 33);
-  cursor: pointer;
-  padding-right: 20px;
-}
-
-.container .navbar .container-drawer ul {
-  list-style-type: none;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr;
-  padding: 20px 30px 35px 20px;
-}
-
-.container .navbar .container-drawer ul li {
-  border-bottom: 1.5px solid #fff;
-  padding-bottom: 8px;
-}
-
-.container .navbar .container-drawer ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
 }
