@@ -10,4 +10,4 @@ Route::controller(PageController::class)->group(function() {
     Route::get('/detail-transactions', 'detailTransactions')->name('transactions-detail');
 });
 
-Route::post('/main', [LoginController::class, 'handleLogin'])->name('login');
+Route::post('/main', [LoginController::class, 'handleLogin']);
