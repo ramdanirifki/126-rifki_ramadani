@@ -46,7 +46,7 @@ const Function = {
     const buttonFoodsMenu = document.querySelector('#foods');
     const buttonDrinksMenu = document.querySelector('#drinks');
     const buttonVegetablesMenu = document.querySelector('#vegetables');
-    const buttonMeatMenu = document.querySelector('#meat');
+    const buttonMieMenu = document.querySelector('#mie');
     const buttonCakeMenu = document.querySelector('#cake');
     const buttonfruitsMenu = document.querySelector('#fruits');
 
@@ -54,7 +54,7 @@ const Function = {
     const foodsMenu = document.querySelector('.menu-product.foods');
     const drinksMenu = document.querySelector('.menu-product.drinks');
     const vegetablesMenu = document.querySelector('.menu-product.vegetables');
-    const meatMenu = document.querySelector('.menu-product.meat');
+    const mieMenu = document.querySelector('.menu-product.mie');
     const cakeMenu = document.querySelector('.menu-product.cake');
     const fruitMenu = document.querySelector('.menu-product.fruits');
 
@@ -65,7 +65,7 @@ const Function = {
       foodsMenu.classList.add('hidden');
       drinksMenu.classList.add('hidden');
       vegetablesMenu.classList.add('hidden');
-      meatMenu.classList.add('hidden');
+      mieMenu.classList.add('hidden');
       cakeMenu.classList.add('hidden');
       fruitMenu.classList.add('hidden');
 
@@ -74,7 +74,7 @@ const Function = {
       buttonFoodsMenu.classList.remove('active')
       buttonDrinksMenu.classList.remove('active')
       buttonVegetablesMenu.classList.remove('active')
-      buttonMeatMenu.classList.remove('active')
+      buttonMieMenu.classList.remove('active')
       buttonCakeMenu.classList.remove('active')
       buttonfruitsMenu.classList.remove('active')
     });
@@ -86,7 +86,7 @@ const Function = {
       foodsMenu.classList.remove('hidden');
       drinksMenu.classList.add('hidden');
       vegetablesMenu.classList.add('hidden');
-      meatMenu.classList.add('hidden');
+      mieMenu.classList.add('hidden');
       cakeMenu.classList.add('hidden');
       fruitMenu.classList.add('hidden');
 
@@ -95,7 +95,7 @@ const Function = {
       buttonFoodsMenu.classList.add('active')
       buttonDrinksMenu.classList.remove('active')
       buttonVegetablesMenu.classList.remove('active')
-      buttonMeatMenu.classList.remove('active')
+      buttonMieMenu.classList.remove('active')
       buttonCakeMenu.classList.remove('active')
       buttonfruitsMenu.classList.remove('active')
     });
@@ -107,7 +107,7 @@ const Function = {
       foodsMenu.classList.add('hidden');
       drinksMenu.classList.remove('hidden');
       vegetablesMenu.classList.add('hidden');
-      meatMenu.classList.add('hidden');
+      mieMenu.classList.add('hidden');
       cakeMenu.classList.add('hidden');
       fruitMenu.classList.add('hidden');
 
@@ -116,7 +116,7 @@ const Function = {
       buttonFoodsMenu.classList.remove('active')
       buttonDrinksMenu.classList.add('active')
       buttonVegetablesMenu.classList.remove('active')
-      buttonMeatMenu.classList.remove('active')
+      buttonMieMenu.classList.remove('active')
       buttonCakeMenu.classList.remove('active')
       buttonfruitsMenu.classList.remove('active')
     });
@@ -128,7 +128,7 @@ const Function = {
       foodsMenu.classList.add('hidden');
       drinksMenu.classList.add('hidden');
       vegetablesMenu.classList.remove('hidden');
-      meatMenu.classList.add('hidden');
+      mieMenu.classList.add('hidden');
       cakeMenu.classList.add('hidden');
       fruitMenu.classList.add('hidden');
 
@@ -137,19 +137,19 @@ const Function = {
       buttonFoodsMenu.classList.remove('active')
       buttonDrinksMenu.classList.remove('active')
       buttonVegetablesMenu.classList.add('active')
-      buttonMeatMenu.classList.remove('active')
+      buttonMieMenu.classList.remove('active')
       buttonCakeMenu.classList.remove('active')
       buttonfruitsMenu.classList.remove('active')
     });
 
     // BUTTON MEAT MENU
-    buttonMeatMenu.addEventListener('click', function() {
+    buttonMieMenu.addEventListener('click', function() {
       // Display Hidden
       allMenu.classList.add('hidden');
       foodsMenu.classList.add('hidden');
       drinksMenu.classList.add('hidden');
       vegetablesMenu.classList.add('hidden');
-      meatMenu.classList.remove('hidden');
+      mieMenu.classList.remove('hidden');
       cakeMenu.classList.add('hidden');
       fruitMenu.classList.add('hidden');
 
@@ -158,7 +158,7 @@ const Function = {
       buttonFoodsMenu.classList.remove('active')
       buttonDrinksMenu.classList.remove('active')
       buttonVegetablesMenu.classList.remove('active')
-      buttonMeatMenu.classList.add('active')
+      buttonMieMenu.classList.add('active')
       buttonCakeMenu.classList.remove('active')
       buttonfruitsMenu.classList.remove('active')
     });
@@ -170,7 +170,7 @@ const Function = {
       foodsMenu.classList.add('hidden');
       drinksMenu.classList.add('hidden');
       vegetablesMenu.classList.add('hidden');
-      meatMenu.classList.add('hidden');
+      mieMenu.classList.add('hidden');
       cakeMenu.classList.remove('hidden');
       fruitMenu.classList.add('hidden');
 
@@ -179,7 +179,7 @@ const Function = {
       buttonFoodsMenu.classList.remove('active')
       buttonDrinksMenu.classList.remove('active')
       buttonVegetablesMenu.classList.remove('active')
-      buttonMeatMenu.classList.remove('active')
+      buttonMieMenu.classList.remove('active')
       buttonCakeMenu.classList.add('active')
       buttonfruitsMenu.classList.remove('active')
     });
@@ -191,7 +191,7 @@ const Function = {
       foodsMenu.classList.add('hidden');
       drinksMenu.classList.add('hidden');
       vegetablesMenu.classList.add('hidden');
-      meatMenu.classList.add('hidden');
+      mieMenu.classList.add('hidden');
       cakeMenu.classList.add('hidden');
       fruitMenu.classList.remove('hidden');
 
@@ -200,7 +200,7 @@ const Function = {
       buttonFoodsMenu.classList.remove('active')
       buttonDrinksMenu.classList.remove('active')
       buttonVegetablesMenu.classList.remove('active')
-      buttonMeatMenu.classList.remove('active')
+      buttonMieMenu.classList.remove('active')
       buttonCakeMenu.classList.remove('active')
       buttonfruitsMenu.classList.add('active')
     });

@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <form action="{{ route('main') }}" method="POST" id="loginForm">
+    <form action="{{ route('main-page') }}" method="POST" id="loginForm">
 		@csrf
         <p>Sign In</p>
         <div class="form-input">
